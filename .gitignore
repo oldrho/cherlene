@@ -1,0 +1,11 @@
+build/*
+/*.ko
+/*.mod*
+/*.o
+/modules.order
+/Module.symvers
+/.*.ko.cmd
+/.*.mod.cmd
+/.*.o.cmd
+/src/*.o
+/src/.*.o.cmd
