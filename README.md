@@ -139,11 +139,11 @@ make debug
 
 ### (U) FAQ
 
-(U) Why did you make this?
+(U) Why did you make this?\
 (U) Boredom.
 
-(U) Does it work on *X* with *Y* kernel?
+(U) Does it work on *X* with *Y* kernel?\
 (U) No idea. Go ahead and find out!
 
-(U) Why is **(U)** at the beginning of every line
+(U) Why is **(U)** at the beginning of every line\
 (U) Classified documents in the US are classified in a number of ways. **U** is **Unclassified** which seems appropriate after it was leaked. The original document was classified **SECRET//NOFORN** (Secret, no foreign nationals) as were most of the lines in the document (**S//NF**).
