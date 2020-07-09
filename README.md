@@ -45,6 +45,7 @@ make debug
 
 ## (U) Operation
 
+
 ### (U) Installation
 
 (U) Copy the module file to the target system.
@@ -72,6 +73,7 @@ make debug
 
 (U) Current rules can be listed as usual
 > iptables -t cherlene -L
+
 
 ### (U) Removal
 
@@ -132,10 +134,16 @@ make debug
 
 (U) This is not meant to be used in any operational capacity and was mostly a research project for myself on kernel modules and netfilter. Very limited testing has been completed and it's relevancy is quickly diminishing as most installations move to `nftables` or `bpfilter`.
 
+(U) This is largely based on iptable_nat.c from the Linux kernel. It's been modified to avoid relying on kernel structures and to modify the DNAT target. If any of the original authors want me to add copyright notices, please let me know. [https://github.com/torvalds/linux/blob/master/net/ipv4/netfilter/iptable_nat.c](https://github.com/torvalds/linux/blob/master/net/ipv4/netfilter/iptable_nat.c)
+
+
 ### (U) FAQ
 
 (U) Why did you make this?
 (U) Boredom.
+
+(U) Does it work on *X* with *Y* kernel?
+(U) No idea. Go ahead and find out!
 
 (U) Why is **(U)** at the beginning of every line
 (U) Classified documents in the US are classified in a number of ways. **U** is **Unclassified** which seems appropriate after it was leaked. The original document was classified **SECRET//NOFORN** (Secret, no foreign nationals) as were most of the lines in the document (**S//NF**).
