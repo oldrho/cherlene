@@ -91,16 +91,22 @@ static int __net_init cherlene_table_init(struct net *net)
 	return ret;
 }
 
+static void __net_exit cherlene_net_pre_exit(struct net *net)
+{
+	if (cherlene_table)
+		cherlene_unregister_lookups(net);
+}
+
 static void __net_exit cherlene_net_exit(struct net *net)
 {
 	if (!cherlene_table)
 		return;
-	cherlene_unregister_lookups(net);
 	ipt_unregister_table(net, cherlene_table, NULL);
 	cherlene_table = NULL;
 }
 
 static struct pernet_operations cherlene_net_ops = {
+	.pre_exit = cherlene_net_pre_exit,
 	.exit	= cherlene_net_exit,
 };
 
